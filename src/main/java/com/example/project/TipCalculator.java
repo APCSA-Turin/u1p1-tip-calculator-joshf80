@@ -12,8 +12,9 @@ public class TipCalculator {
         double pretipPer = cost / people;
         double tipPer = totalTip / people;
         double totalCostPer = totalBill / people;
-
-        // Rounding method found here: https://stackoverflow.com/questions/8825209/rounding-decimal-points
+        
+        /* Rounding done after calculations to not mess up rounding
+        rounding method found here: https://stackoverflow.com/questions/8825209/rounding-decimal-points */
         totalTip = Math.round(totalTip * 100.0) / 100.0;
         totalBill = Math.round(totalBill * 100.0) / 100.0;
         pretipPer = Math.round(pretipPer * 100.0) / 100.0;
